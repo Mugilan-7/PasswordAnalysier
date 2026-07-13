@@ -1,0 +1,26 @@
+# Dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Maven build output
+backend/target/
+backend/.flattened-pom.xml
+backend/dependency-reduced-pom.xml
+
+# IDE and OS files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Environment variables / Local config
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local

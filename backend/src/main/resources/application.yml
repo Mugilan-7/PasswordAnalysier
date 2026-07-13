@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/securepass_db
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# Security / Custom properties
+securepass:
+  jwt:
+    # A base64-encoded or custom secret key of sufficient length
+    secret: 9a4f2c8d3b7a1e5f8g2h6k9l0m3n6p8r1s4t7u0v3w6x9y2z5a8b1c4d7e0f3g6h
+    expiration-ms: 86400000 # 24 hours
+  crypto:
+    # 32-character key for AES-256 (256-bit encryption key)
+    secret-key: s3cur3P@ssAISecretKey2026Password!
